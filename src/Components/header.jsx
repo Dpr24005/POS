@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlinePoweroff } from "react-icons/ai";
 const header = () => {
   return (
     <>
-      <div className="row bg-header">
+      <div className="container-fluid; row bg-header">
         <div className="col">
           <div
             className="pt-2 px-4"
@@ -13,41 +13,44 @@ const header = () => {
             data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions"
           >
-            {" "}
-            <AiOutlineMenu size={30} />{" "}
+            <AiOutlineMenu size={30} />
           </div>
 
           <div
-            class="offcanvas offcanvas-start"
+            className="offcanvas offcanvas-start bg-header"
             data-bs-scroll="true"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            <div className="offcanvas-header">
+              <div className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                 Menu
-              </h5>
+              </div>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
-            </div>
-            <div class="offcanvas-body">
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sales</a> </p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">DEBT </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Order </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Cash </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Registry </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Quatation </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sales </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Return </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Reports</a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Settings </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Release Note </a></p>
-              <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><AiOutlinePoweroff/> Log Out</a></p>
+            </div >
+            <div className="offcanvas-body">
+              <table className="table table-hover text-center text-primary">
+                <tbody>
+              <tr><td>Sales</td></tr>
+              <tr><td>DEBT</td></tr> 
+              <tr><td>Order</td></tr> 
+              <tr><td>Cash</td></tr>
+              <tr><td>Registry</td></tr>
+              <tr><td>Quatation</td></tr>
+              <tr><td>Sales</td></tr>
+              <tr><td>Return</td></tr>
+              <tr><td>Reports</td></tr>
+              <tr><td>Settings</td></tr>
+              <tr><td>Release Note</td></tr>
+              <tr><td><AiOutlinePoweroff/> Log Out</td></tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

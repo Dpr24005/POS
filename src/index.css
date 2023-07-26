@@ -4,13 +4,18 @@
   background: rgb(163, 143, 253);
 }
 
-.bg-red{
-  background: red;
+.bg-black{
+  background: rgba(0, 0, 0, 0.374);
 }
 
 .max-height{
-  max-height: 500px;
+  max-height: 300px;
 }
+
+.max-height-drink{
+  max-height: 300px;
+}
+
 
 .border1{
   border: 1px solid black;
@@ -19,11 +24,50 @@
   cursor: pointer;
   font-weight: bold;
 }
+.pos-item>img:hover{
+  scale: 1.2;
+}
+
+.pos-item:hover{
+  background: rgba(163, 143, 253);
+  color: white;
+}
 .f-screen{
   max-height: 100%;
 }
 .image-width{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+  padding: 0;
+  border-radius: 10px;
+}
+.equal{
+  width: 7rem;
+}
+
+.name-tag{
+  height: 50px;
+  padding-top: 5px;
+}
+.price-tag{
+  height: auto;
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+}
+.price-tag:hover{
+  scale: 1.2;
+}
+.display{
+  display: flex;
+  justify-content:center;
+}
+.max-bill{
+  width: auto;
+  height: 745px;
+}
+.cal{
+  display: flex;
+  justify-content: space-around;
 }
